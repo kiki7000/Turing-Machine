@@ -1,11 +1,20 @@
-import "react";
+import { Component } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
-	return (
-		<>
-			<h1>Hello, World!</h1>
-		</>
-	);
+import Main from "./pages/Main.tsx";
+
+class App extends Component {
+	render() {
+		return (
+			<div className="App">
+				<BrowserRouter>
+					<Routes>
+						<Route path="/" element={<Main />} />
+					</Routes>
+				</BrowserRouter>
+			</div>
+		);
+	}
 }
 
 export default App;
