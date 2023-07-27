@@ -7,7 +7,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<BrowserRouter>
+				<BrowserRouter basename="/Turing-Machine">
 					<Routes>
 						<Route path="/" element={<Main />} />
 					</Routes>
