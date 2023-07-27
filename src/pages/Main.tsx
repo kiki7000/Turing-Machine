@@ -1,8 +1,9 @@
 import { Component } from "react";
+import { Button } from "antd";
 
 class Main extends Component {
 	render() {
-		return <h1>Hello World!</h1>;
+		return <Button>Hello World!</Button>;
 	}
 }
 
