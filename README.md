@@ -1,5 +1,8 @@
 # 튜링 머신
 
+[![Deploy static content to Pages](https://github.com/woohyunjng/Turing-Machine/actions/workflows/deploy.yml/badge.svg)](https://github.com/woohyunjng/Turing-Machine/actions/workflows/deploy.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a0f50db2d41e4320aa283fdb9d25cb92)](https://app.codacy.com/gh/woohyunjng/Turing-Machine/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 ## 만들게된 계기
 
 경기과학고 영재성 검사 2단계 지필시험에 튜링 머신 문제가 나왔습니다.
