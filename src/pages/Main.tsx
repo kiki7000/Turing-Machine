@@ -14,7 +14,7 @@ const Main = () => {
 		>
 			<Typography.Title
 				style={{
-					marginTop: "30vh",
+					marginTop: "25vh",
 				}}
 			>
 				튜링 머신
@@ -50,6 +50,21 @@ const Main = () => {
 					onClick={() => navigate("/help")}
 				>
 					도움말
+				</Button>
+			</div>
+			<div>
+				<Button
+					style={{
+						marginTop: "0.5px",
+						width: "200px",
+					}}
+					onClick={() =>
+						window.location.replace(
+							"https://github.com/woohyunjng/Turing-Machine"
+						)
+					}
+				>
+					깃허브
 				</Button>
 			</div>
 		</div>
