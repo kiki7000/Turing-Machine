@@ -1,56 +1,59 @@
-import { Component } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Typography, Button } from "antd";
 
-class Main extends Component {
-	render() {
-		return (
-			<div
+const Main = () => {
+	const navigate = useNavigate();
+
+	return (
+		<div
+			style={{
+				textAlign: "center",
+				display: "block",
+			}}
+		>
+			<Typography.Title
 				style={{
-					textAlign: "center",
-					display: "block",
+					marginTop: "30vh",
 				}}
 			>
-				<Typography.Title
+				튜링 머신
+			</Typography.Title>
+			<div>
+				<Button
 					style={{
-						marginTop: "30vh",
+						marginTop: "0.5px",
+						width: "200px",
 					}}
+					onClick={() => navigate("/make")}
 				>
-					튜링 머신
-				</Typography.Title>
-				<div>
-					<Button
-						style={{
-							marginTop: "0.5px",
-							width: "200px",
-						}}
-					>
-						새로 만들기
-					</Button>
-				</div>
-				<div>
-					<Button
-						style={{
-							marginTop: "0.5px",
-							width: "200px",
-						}}
-					>
-						불러오기
-					</Button>
-				</div>
-				<div>
-					<Button
-						style={{
-							marginTop: "0.5px",
-							width: "200px",
-						}}
-					>
-						도움말
-					</Button>
-				</div>
+					새로 만들기
+				</Button>
 			</div>
-		);
-	}
-}
+			<div>
+				<Button
+					style={{
+						marginTop: "0.5px",
+						width: "200px",
+					}}
+					onClick={() => navigate("/make")}
+				>
+					불러오기
+				</Button>
+			</div>
+			<div>
+				<Button
+					style={{
+						marginTop: "0.5px",
+						width: "200px",
+					}}
+					onClick={() => navigate("/help")}
+				>
+					도움말
+				</Button>
+			</div>
+		</div>
+	);
+};
 
 export default Main;

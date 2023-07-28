@@ -5,26 +5,24 @@ import { ConfigProvider } from "antd";
 
 import Main from "./pages/Main.tsx";
 
-class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				<ConfigProvider
-					theme={{
-						token: {
-							fontFamily: "'Do Hyeon', sans-serif;",
-						},
-					}}
-				>
-					<BrowserRouter basename="/Turing-Machine">
-						<Routes>
-							<Route path="/" element={<Main />} />
-						</Routes>
-					</BrowserRouter>
-				</ConfigProvider>
-			</div>
-		);
-	}
-}
+const App = () => {
+	return (
+		<div className="App">
+			<ConfigProvider
+				theme={{
+					token: {
+						fontFamily: "'Do Hyeon', sans-serif;",
+					},
+				}}
+			>
+				<BrowserRouter basename="/Turing-Machine">
+					<Routes>
+						<Route path="/" element={<Main />} />
+					</Routes>
+				</BrowserRouter>
+			</ConfigProvider>
+		</div>
+	);
+};
 
 export default App;
