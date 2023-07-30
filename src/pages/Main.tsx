@@ -1,63 +1,24 @@
 import { useNavigate } from "react-router-dom";
 
-import { Typography, Button } from "antd";
+import { MainContainer, MainBtn, MainTitle } from "../components/styled.tsx";
 
 const Main = () => {
 	const navigate = useNavigate();
 
 	return (
-		<div
-			style={{
-				textAlign: "center",
-				display: "block",
-			}}
-		>
-			<Typography.Title
-				style={{
-					marginTop: "25vh",
-				}}
-			>
-				튜링 머신
-			</Typography.Title>
+		<MainContainer>
+			<MainTitle>튜링 머신</MainTitle>
 			<div>
-				<Button
-					style={{
-						marginTop: "0.5px",
-						width: "200px",
-					}}
-					onClick={() => navigate("/make")}
-				>
-					새로 만들기
-				</Button>
+				<MainBtn onClick={() => navigate("/make")}>새로 만들기</MainBtn>
 			</div>
 			<div>
-				<Button
-					style={{
-						marginTop: "0.5px",
-						width: "200px",
-					}}
-					onClick={() => navigate("/make")}
-				>
-					불러오기
-				</Button>
+				<MainBtn onClick={() => navigate("/make")}>불러오기</MainBtn>
 			</div>
 			<div>
-				<Button
-					style={{
-						marginTop: "0.5px",
-						width: "200px",
-					}}
-					onClick={() => navigate("/help")}
-				>
-					도움말
-				</Button>
+				<MainBtn onClick={() => navigate("/help")}>도움말</MainBtn>
 			</div>
 			<div>
-				<Button
-					style={{
-						marginTop: "0.5px",
-						width: "200px",
-					}}
+				<MainBtn
 					onClick={() =>
 						window.location.replace(
 							"https://github.com/woohyunjng/Turing-Machine"
@@ -65,9 +26,9 @@ const Main = () => {
 					}
 				>
 					깃허브
-				</Button>
+				</MainBtn>
 			</div>
-		</div>
+		</MainContainer>
 	);
 };
 
