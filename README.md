@@ -10,7 +10,7 @@
 
 ## 사용하기
 
-[링크]()
+[링크](https://woohyunjng.github.io/Turing-Machine/)
 
 1.
 
